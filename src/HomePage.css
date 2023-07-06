@@ -8,6 +8,119 @@
 
 }
 
+/* login page */
+.login-back{
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #464343;
+    gap: 134px;
+    flex-direction: row;
+}
+.inner-box{
+    min-width: 300px;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 1px 1px 4px black;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* margin-left: 30%; */
+    background: black;
+    color: white;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn button{
+    outline: none;
+    background-color: #252227;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 16px;
+    width: 5    0%;
+    transition: 100ms;
+    border: 2px solid #800052;
+}
+
+.btn button:hover{
+    background-color: #800052;
+}
+
+.btn p{
+    font-weight: 700;
+    color: black;
+}
+.btn p span a{
+    font-weight: bold;
+    color: #0dff00;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.btn .err{
+    font-weight: bold;
+    font-size: 0.857rem;
+    color: red;
+    text-align: center;
+}
+
+.container label{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #4b4b4b;
+}
+.container input{
+    border-radius: 5px;
+    border: 1px solid white;
+    outline: none;
+    padding: 8px 15px;
+    color: black;
+}
+.container input:hover{
+    border-color: #ccc;
+}
+.container input:focus{
+    border-color: #800052;
+}
+.fac{
+    background-color: #1a2ee7 !important;
+}
+.gogl{
+    background-color:  #fff  !important;
+    border: 2px solid black !important;
+    color: black !important;
+}
+.p-or{
+    text-align: center;
+}
+.browser-login{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 35px;
+}
+.link-singup{
+    color:  #800052;
+}
+.log-inputBox{
+    height: 34px;
+    border-radius: 10px;
+    background: #252227;
+    border: 2px solid #396626;
+    text-align: center;
+    color: white;
+}
 /* menuBox section */
 
 .menu-box{
