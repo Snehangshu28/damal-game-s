@@ -1,0 +1,52 @@
+.main-box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 17px;
+    height: 100vh;
+    background: #000000d9;
+
+}
+
+/* menuBox section */
+
+.menu-box{
+    height: 100%;
+    width: 13%;
+    background-color: black;
+}
+.menu-list{
+    color: white;
+}
+.logo{
+    height: 20px;
+    width: 20px;
+}
+.log-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+
+/* gameBox section */
+
+.game-box{
+    height: 100%;
+    width: 64%;
+    background-color: black;
+    margin-top: 2%;
+    border-radius: 22px;
+}
+
+
+
+/* chatBox section */
+
+.chat-box{
+    height: 100%;
+    width: 20%;
+    background-color: black;
+    margin-top: 2%;
+    border-radius: 22px;
+}

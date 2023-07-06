@@ -1,6 +1,8 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MianPage from './MianPage';
+import HomePage from './HomePage';
+import LoginPage from './pages/LoginPage';
+import SingUpPage from './pages/SingUpPage'
 
 
 function App() {
@@ -8,7 +10,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<MianPage/>}/>
+          <Route path='/' element={<HomePage/>}/>
+          <Route path='/login' element={<LoginPage/>}/>
+          <Route path='/singup' element= {<SingUpPage/>}/>
         </Routes>
       </BrowserRouter>
     </div>
