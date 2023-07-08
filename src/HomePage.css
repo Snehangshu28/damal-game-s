@@ -121,6 +121,13 @@
     text-align: center;
     color: white;
 }
+.input-checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
 /* menuBox section */
 
 .menu-box{
@@ -163,6 +170,7 @@
     justify-content: center;
     gap: 25px;
     font-size: 20px;
+    align-items: flex-start;
 }
 .login-btn{
     height: 43px;
@@ -189,6 +197,25 @@
     width: 125px;
     background: #464343;
     color: white;
+}
+.help-lang{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 20px;
+    color: #5f5b54;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.list-footer{
+    display: flex;
+    justify-content: center;
+}
+li{
+    justify-content: center;
+    display: flex;
+    gap: 18px;
 }
 /* gameBox section */
 
