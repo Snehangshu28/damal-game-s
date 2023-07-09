@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    gap: 17px;
-    height: 100vh;
-    background: #000000d9;
+    gap: 15px;
+    height: 100%;
+    /* background: #000000d9; */
 
 }
 
@@ -211,6 +211,7 @@
 .list-footer{
     display: flex;
     justify-content: center;
+    margin-top: 50%;
 }
 li{
     justify-content: center;
@@ -227,18 +228,56 @@ li{
     border-radius: 22px;
     margin-left: 15%;
 }
+.currentUser{
+    margin-left: 9%;
+    margin-top: 1%;
+    display: flex;
+    gap: 11px;
+    align-items: center;}
+.userAvater{
+    height: 33px;
+    width: 33px;
+    border: 2px solid white;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
 .damal-logo{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+.game-container{
+    color: white;
+}
 
 /* chatBox section */
 
 .chat-box{
-    height: 100%;
+    height: 93vh;
+    max-width: 50%;
     width: 20%;
     background-color: black;
     margin-top: 2%;
     border-radius: 22px;
+}
+.user-name{
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.chatbox-heading{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    row-gap: 45px;
+}
+.chatbox-icon{
+    display: flex;
+    gap: 7px;
 }
