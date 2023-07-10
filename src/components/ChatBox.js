@@ -28,6 +28,9 @@ export default function ChatBox() {
       });
   }, []);
 
+
+
+
   useEffect(() => {
       subscribeChanels(user.uid)
   }, [user])
@@ -95,6 +98,7 @@ export default function ChatBox() {
   setRead(unreadMessages.length)
   console.log(unreadMessages.length);
  },[chats])
+
  
 
   return (
@@ -106,7 +110,9 @@ export default function ChatBox() {
       <div >
         {
           users?.length && users.map((user) => (
+            <>
             <div className='user-name' onClick={() => personalChat(user.uid)} onChange={read} key={user.uid}>{user.displayName}</div>
+            </>
           ))
           }
       </div>

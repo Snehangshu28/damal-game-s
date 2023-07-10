@@ -233,15 +233,18 @@ li{
     margin-top: 1%;
     display: flex;
     gap: 11px;
-    align-items: center;}
+    align-items: center;
+    font-size: 30px;
+}
 .userAvater{
-    height: 33px;
-    width: 33px;
-    border: 2px solid white;
+    height: 41px;
+    width: 41px;
+    border: 2px solid #800052;
     border-radius: 50%;
     justify-content: center;
     display: flex;
     align-items: center;
+    background: #665c5c;
 }
 .damal-logo{
     display: flex;
@@ -261,13 +264,19 @@ li{
     background-color: black;
     margin-top: 2%;
     border-radius: 22px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80%;
 }
 .user-name{
     color: white;
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
     flex-wrap: nowrap;
+    height: 3rem;
+    border: 2px solid #201e1e94;
+    font-size: 23px;
 }
 .chatbox-heading{
     color: white;
@@ -280,4 +289,6 @@ li{
 .chatbox-icon{
     display: flex;
     gap: 7px;
+    height: 3rem;
+    align-items: center;
 }
