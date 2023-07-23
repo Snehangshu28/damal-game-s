@@ -14,9 +14,6 @@ export default function MianPage() {
       <div className='game-box'>
           <GameBox/>
       </div>
-      <div className='chat-box'>
-          <ChatBox/>
-      </div>
     </div>
   )
 }

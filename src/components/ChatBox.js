@@ -107,32 +107,34 @@ export default function ChatBox() {
         <h4 className='chatbox-icon'><EmailIcon/>Messages</h4>
       </div>
       <hr></hr>
-      <div >
-        {
-          users?.length && users.map((user) => (
-            <>
-            <div className='user-name' onClick={() => personalChat(user.uid)} onChange={read} key={user.uid}>{user.displayName}</div>
-            </>
-          ))
+      <div className='user-chatbox'>
+        <div className='loginUser' >
+          {
+            users?.length && users.map((user) => (
+              <>
+              <div className='user-name' onClick={() => personalChat(user.uid)} onChange={read} key={user.uid}>{user.displayName}</div>
+              </>
+            ))
+            }
+        </div>
+        <div className="chat-box2">
+          {
+            chanel && chats.filter(ch => ch.id == chanel)[0].messages.map((msg, i) => (
+              <>
+                <div key={i} style={{
+                  textAlign: msg.uid == user.uid ? 'right' : 'left'
+                }}>{msg.text}</div>
+              </>
+            ))
           }
-      </div>
-      <div className="chat-box2">
-        {
-          chanel && chats.filter(ch => ch.id == chanel)[0].messages.map((msg, i) => (
-            <>
-              <div key={i} style={{
-                textAlign: msg.uid == user.uid ? 'right' : 'left'
-              }}>{msg.text}</div>
-            </>
-          ))
-        }
-        {
-          chanel && (<>
-            <input value={text} onChange={(e) => setText(e.target.value)} type='text' />
-            <button onClick={handelSubmit}>send</button>
-          </>)
-        }
+          {
+            chanel && (<>
+              <input value={text} className='chat-input' onChange={(e) => setText(e.target.value)} type='text' />
+              <button className='chat-send-btn' onClick={handelSubmit}>send</button>
+            </>)
+          }
 
+        </div>
       </div>
     </>
   )

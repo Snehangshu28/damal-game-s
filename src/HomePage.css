@@ -222,19 +222,19 @@ li{
 
 .game-box{
     height: 100%;
-    width: 64%;
+    width: 83%;
     background-color: black;
     margin-top: 2%;
     border-radius: 22px;
     margin-left: 15%;
 }
 .currentUser{
-    margin-left: 9%;
     margin-top: 1%;
     display: flex;
-    gap: 11px;
+    gap: 12px;
     align-items: center;
     font-size: 30px;
+    justify-content: flex-end;
 }
 .userAvater{
     height: 41px;
@@ -254,20 +254,28 @@ li{
 .game-container{
     color: white;
 }
-
+.curentUserIcon{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5px;
+}
+.maincontainer-userName{
+    display: flex;
+}
 /* chatBox section */
 
 .chat-box{
     height: 93vh;
-    max-width: 50%;
-    width: 20%;
+    width: 69%;
     background-color: black;
     margin-top: 2%;
     border-radius: 22px;
     position: fixed;
     display: flex;
     flex-direction: column;
-    margin-left: 80%;
+    margin-left: 20%;
 }
 .user-name{
     color: white;
@@ -291,4 +299,22 @@ li{
     gap: 7px;
     height: 3rem;
     align-items: center;
+}
+.user-chatbox{
+    display: flex;
+    justify-content: space-between;
+}
+.loginUser{
+    width: 35%;
+}
+.chat-box2{
+    width: 63%;
+}
+.chat-input{
+    height: 19%;
+    width: 82%;
+}
+.chat-send-btn{
+    height: 21%;
+    width: 16%;
 }
