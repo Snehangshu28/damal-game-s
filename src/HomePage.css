@@ -311,10 +311,14 @@ li{
     width: 63%;
 }
 .chat-input{
-    height: 19%;
     width: 82%;
 }
 .chat-send-btn{
-    height: 21%;
     width: 16%;
+    background: #4627ff;
+    color: white;
+}
+.chat-keybord{
+    display: flex;
+    gap: 1%;
 }

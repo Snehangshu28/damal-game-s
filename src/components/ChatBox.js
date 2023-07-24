@@ -2,10 +2,12 @@ import React,{useEffect, useState} from 'react';
 import '../HomePage.css';
 
 import EmailIcon from '@mui/icons-material/Email';
+import SendIcon from '@mui/icons-material/Send';
 
 import { db } from "../Firebase";
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import { collection, query, where, onSnapshot, addDoc, updateDoc, arrayUnion, doc} from 'firebase/firestore';
+import { colors } from '@mui/material';
 
 
 
@@ -121,17 +123,18 @@ export default function ChatBox() {
           {
             chanel && chats.filter(ch => ch.id == chanel)[0].messages.map((msg, i) => (
               <>
-                <div key={i} style={{
-                  textAlign: msg.uid == user.uid ? 'right' : 'left'
+                <div key={i} className='chat-text' style={{
+                  textAlign: msg.uid == user.uid ? 'right' : 'left',
+                  color: msg.uid == user.uid ? '#66f1a0' : 'rgb(211 27 135)' 
                 }}>{msg.text}</div>
               </>
             ))
           }
           {
-            chanel && (<>
+            chanel && (<div className='chat-keybord'>
               <input value={text} className='chat-input' onChange={(e) => setText(e.target.value)} type='text' />
-              <button className='chat-send-btn' onClick={handelSubmit}>send</button>
-            </>)
+              <button className='chat-send-btn' onClick={handelSubmit}><SendIcon/></button>
+            </div>)
           }
 
         </div>
