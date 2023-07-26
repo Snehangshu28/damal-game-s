@@ -235,6 +235,7 @@ li{
     align-items: center;
     font-size: 30px;
     justify-content: flex-end;
+
 }
 .userAvater{
     height: 41px;
@@ -260,9 +261,28 @@ li{
     flex-direction: row;
     justify-content: space-around;
     gap: 5px;
+    align-items: center;
+
 }
 .maincontainer-userName{
     display: flex;
+}
+.img-1{
+    margin-left: 12%;
+    width: 75%;
+    margin-top: 2%;
+}
+.img-2{
+    height: 50vh;
+    width: 56%;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+.img-3{
+    margin-left: 14%;
+    padding: 4%;
+    height: 26vh;
+    width: 35%;
 }
 /* chatBox section */
 
@@ -283,7 +303,7 @@ li{
     align-items: center;
     flex-wrap: nowrap;
     height: 3rem;
-    border: 2px solid #201e1e94;
+    border-bottom: solid #4a4141 2px;
     font-size: 23px;
 }
 .chatbox-heading{

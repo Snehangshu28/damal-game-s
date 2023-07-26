@@ -25,13 +25,14 @@ export default function GameBox() {
           <div className='curentUserIcon'>
               <GroupIcon/>
               
-              <Link to="/messages"><MarkunreadIcon/></Link>
+              <Link to="/messages" style={{color:"white"}}><MarkunreadIcon/></Link>
               <SettingsIcon/>
           </div>
         </div>
-        <img src="https://img.freepik.com/premium-photo/illustration-gaming-joystick_800563-4110.jpg"></img>
-        <h1>Play agme </h1>
-        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfaOWsTUobPJK3AuvBWQINivh4dVZA5V6rrhGEhIum'/>
+        <img className='img-1' src='https://t4.ftcdn.net/jpg/04/42/21/53/360_F_442215355_AjiR6ogucq3vPzjFAAEfwbPXYGqYVAap.jpg'></img>
+        <img className='img-2' src="https://img.freepik.com/premium-photo/illustration-gaming-joystick_800563-4110.jpg"></img>
+        <h1 style={{marginLeft:"10%"}}>Play agme </h1>
+        <img className='img-3' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfaOWsTUobPJK3AuvBWQINivh4dVZA5V6rrhGEhIum'/>
     </div>
   )
 }

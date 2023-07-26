@@ -42,6 +42,7 @@ export default function ChatBox() {
       
   }, [chats, chanel])
 
+
   
 
   const personalChat = async(userId) =>{
@@ -57,10 +58,8 @@ export default function ChatBox() {
               read: false
           }]
       }
-
       // first check if already exists 
       const prevId = chats.findIndex(ch => ch.users.includes(userId))
-
       if (prevId >= 0) {
           setChanel(chats[prevId].id)
       } else {
@@ -68,7 +67,7 @@ export default function ChatBox() {
           await addDoc(chListRef, chanel).then((res)=>{
               setChanel(res.id)
           })
-      }        
+      }     
   }
 
   const subscribeChanels = (userId)=>{
@@ -101,7 +100,6 @@ export default function ChatBox() {
   console.log(unreadMessages.length);
  },[chats])
 
- 
 
   return (
     <>
@@ -121,6 +119,7 @@ export default function ChatBox() {
         </div>
         <div className="chat-box2">
           {
+            
             chanel && chats.filter(ch => ch.id == chanel)[0].messages.map((msg, i) => (
               <>
                 <div key={i} className='chat-text' style={{
@@ -132,11 +131,11 @@ export default function ChatBox() {
           }
           {
             chanel && (<div className='chat-keybord'>
+                 <div style={{color:"white"}}>{users.userId}</div>
               <input value={text} className='chat-input' onChange={(e) => setText(e.target.value)} type='text' />
               <button className='chat-send-btn' onClick={handelSubmit}><SendIcon/></button>
             </div>)
           }
-
         </div>
       </div>
     </>
