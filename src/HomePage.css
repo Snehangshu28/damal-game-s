@@ -1,10 +1,9 @@
 .main-box{
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 15px;
+    justify-content: center;
     height: 100%;
-    /* background: #000000d9; */
+    background: white;
+    width: 100%;
 
 }
 
@@ -132,10 +131,8 @@
 
 .menu-box{
     height: 100vh;
-    width: 13%;
-    background-color: black;
-    position: fixed;
-}
+    width: 30%;
+    background-color: #543434;}
 .menu-list{
     color: white;
 }
@@ -221,12 +218,9 @@ li{
 /* gameBox section */
 
 .game-box{
-    height: 100%;
-    width: 83%;
-    background-color: black;
-    margin-top: 2%;
-    border-radius: 22px;
-    margin-left: 15%;
+    height: 100vh;
+    width: 60%;
+    background-color: #000000;
 }
 .currentUser{
     margin-top: 1%;
@@ -240,12 +234,12 @@ li{
 .userAvater{
     height: 41px;
     width: 41px;
-    border: 2px solid #800052;
+    border: 2px solid #ffffff;
     border-radius: 50%;
     justify-content: center;
     display: flex;
     align-items: center;
-    background: #665c5c;
+    background: #2bc4428a;
 }
 .damal-logo{
     display: flex;
@@ -287,18 +281,19 @@ li{
 /* chatBox section */
 
 .chat-box{
-    height: 93vh;
+    height: 100vh;
     width: 69%;
-    background-color: black;
     margin-top: 2%;
     border-radius: 22px;
     position: fixed;
     display: flex;
     flex-direction: column;
     margin-left: 20%;
+    margin-top: 2px;
+    border-color:blueviolet;
 }
 .user-name{
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -307,12 +302,11 @@ li{
     font-size: 23px;
 }
 .chatbox-heading{
-    color: white;
+    color: black;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    row-gap: 45px;
 }
 .chatbox-icon{
     display: flex;
@@ -326,9 +320,12 @@ li{
 }
 .loginUser{
     width: 35%;
+    border: 2px solid;
+    height: 100vh;
 }
 .chat-box2{
     width: 63%;
+    border: 2px solid;
 }
 .chat-input{
     width: 82%;
@@ -341,4 +338,9 @@ li{
 .chat-keybord{
     display: flex;
     gap: 1%;
+}
+.chat-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

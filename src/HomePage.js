@@ -8,12 +8,13 @@ import ChatBox from './components/ChatBox';
 export default function MianPage() {
   return (
     <div className='main-box'>
-      <div className='menu-box'>
+      {/* <div className='menu-box'>
           <MenuBox/>
       </div>
       <div className='game-box'>
           <GameBox/>
-      </div>
+      </div> */}
+      <div style={{width:"90%", height:"90%"}}><ChatBox/></div>
     </div>
   )
 }
